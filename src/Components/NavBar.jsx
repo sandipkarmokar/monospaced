@@ -1,7 +1,7 @@
 function NavBar() {
   return (
     <div className="w-screen bg-dark_blue-300 h-24 flex items-center">
-      <div className="lg:container mx-auto flex justify-between">
+      <div className="container mx-auto flex justify-between">
         <div className="text-[#B8D0E0]">
           <p className="text-3xl">monospaced://</p>
           <p className="text-base">Fira Code</p>
