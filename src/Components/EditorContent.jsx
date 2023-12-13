@@ -5,6 +5,9 @@ function EditorContent() {
   // React.useEffect(() => {
   //   hljs.highlightAll();
   // }, []);
+  const options = {
+    fontFamily: "Fira Code",
+  };
 
   const jsValue = `
     const greeter = (name) => {
@@ -29,6 +32,7 @@ function EditorContent() {
         className="h-full"
         theme="vs-dark"
         defaultLanguage="javascript"
+        options={options}
         defaultValue={jsValue}
       ></Editor>
       {/* <link

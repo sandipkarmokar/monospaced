@@ -1,4 +1,4 @@
 export const Fonts = [
   { name: "Fira Code", id: "Fira Code" },
-  { name: "Ubuntu Mono", id: "Ubuntu Mono" },
+  { name: "IBM Plex Sans", id: "IBM Plex Sans" },
 ];
