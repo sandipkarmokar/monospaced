@@ -1,7 +1,6 @@
 import React from "react";
 
 function CodingLanguageButton({ setSelectedButton, name, id, isSelected }) {
-  console.log(isSelected);
   return (
     <button
       key={id}

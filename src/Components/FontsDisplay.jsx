@@ -5,7 +5,6 @@ import { FontContext } from "./Base";
 
 function FontsDisplay() {
   const { font, setFont } = useContext(FontContext);
-  console.log(font);
   return (
     <div className="m-6">
       {Fonts.map(({ name, id }) => {

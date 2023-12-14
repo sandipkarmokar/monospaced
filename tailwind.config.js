@@ -1,11 +1,20 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("ta"ilwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
+        DMMono: ["DM Mono", "monospace"],
         FiraCode: ["Fira Code", "monospace"],
-        IBMPlexSans: ["IBM Plex Sans", "sans - serif"],
+        FiraMono: ["Fira Mono", "monospace"],
+        IBMPlexSans: ["IBM Plex Sans", "sans-serif"],
+        JetBrainsMono: ["JetBrains Mono", "monospace"],
+        NotoSansMono: ["Noto Sans Mono", "monospace"],
+        RedHatMono: ["Red Hat Mono", "monospace"],
+        RobotoMono: ["Roboto Mono", "monospace"],
+        SpaceMono: ["Space Mono", "monospace"],
+        UbuntuMono: ["Ubuntu Mono", "monospace"],
+        HedvigLettersSerif: ["Hedvig Letters Serif", "serif"],
       },
       colors: {
         dark_blue: {

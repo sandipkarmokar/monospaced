@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Editor from "@monaco-editor/react";
+import { FontContext } from "./Base";
+import { Fonts } from "../Data/Fonts";
 
 function EditorContent() {
-  // React.useEffect(() => {
-  //   hljs.highlightAll();
-  // }, []);
+  const { font, setFont } = useContext(FontContext);
+  const [selectedFont, setSelectedFont] = useState("");
+
+  React.useEffect(() => {
+    const matchingFont = Fonts.find((el) => el.name === font);
+
+    if (matchingFont) {
+      setSelectedFont(matchingFont.name);
+    }
+  }, [font]);
+
   const options = {
-    fontFamily: "Fira Code",
+    fontFamily: selectedFont,
   };
 
   const jsValue = `
@@ -25,7 +35,8 @@ function EditorContent() {
     };
 
     greeter("alex");
-        `;
+  `;
+
   return (
     <div className="h-full">
       <Editor
@@ -35,12 +46,6 @@ function EditorContent() {
         options={options}
         defaultValue={jsValue}
       ></Editor>
-      {/* <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark-reasonable.css"
-      />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> */}
     </div>
   );
 }
