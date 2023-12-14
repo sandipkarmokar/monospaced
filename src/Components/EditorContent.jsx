@@ -38,15 +38,13 @@ function EditorContent() {
   `;
 
   return (
-    <div className="h-full">
-      <Editor
-        className="h-full"
-        theme="vs-dark"
-        defaultLanguage="javascript"
-        options={options}
-        defaultValue={jsValue}
-      ></Editor>
-    </div>
+    <Editor
+      className="h-full"
+      theme="vs-dark"
+      defaultLanguage="javascript"
+      options={options}
+      defaultValue={jsValue}
+    ></Editor>
   );
 }
 
