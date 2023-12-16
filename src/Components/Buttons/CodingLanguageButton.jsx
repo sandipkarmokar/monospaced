@@ -29,7 +29,7 @@ function CodingLanguageButton({ setCodingLanguage, name, id, isSelected }) {
         <button
           key={id}
           className="bg-dark_blue-300
-       text-white border-[#012A45] border-2 px-6 py-2"
+       text-white border-[#012A45] border-2 px-6 py-2 hover:bg-[#071B29]"
           onClick={() => setCodingLanguage(name)}
         >
           {name}
