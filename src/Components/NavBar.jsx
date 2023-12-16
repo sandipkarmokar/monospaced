@@ -1,5 +1,5 @@
 import React from "react";
-import GithubIcon from "../assets/githubIcon.svg";
+import GithubIcon from "../assets/GithubIcon.svg";
 
 function NavBar() {
   return (
