@@ -7,14 +7,13 @@ export default {
         DMMono: ["DM Mono", "monospace"],
         FiraCode: ["Fira Code", "monospace"],
         FiraMono: ["Fira Mono", "monospace"],
-        IBMPlexSans: ["IBM Plex Sans", "sans-serif"],
+        IBMPlexMono: ["IBM Plex Mono", "monospace"],
         JetBrainsMono: ["JetBrains Mono", "monospace"],
         NotoSansMono: ["Noto Sans Mono", "monospace"],
         RedHatMono: ["Red Hat Mono", "monospace"],
         RobotoMono: ["Roboto Mono", "monospace"],
         SpaceMono: ["Space Mono", "monospace"],
         UbuntuMono: ["Ubuntu Mono", "monospace"],
-        HedvigLettersSerif: ["Hedvig Letters Serif", "serif"],
       },
       colors: {
         dark_blue: {
