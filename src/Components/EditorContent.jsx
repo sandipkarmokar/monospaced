@@ -6,6 +6,7 @@ import { CodingLanguageContext } from "./Editor";
 import { Fonts } from "../Data/Fonts";
 import { Javascript } from "../Data/CodingLanguageFiles/Javascript";
 import { HTML } from "../Data/CodingLanguageFiles/HTML";
+import { Typescript } from "../Data/CodingLanguageFiles/Typescript";
 
 function EditorContent() {
   const { font, setFont } = useContext(FontContext);
@@ -32,13 +33,12 @@ function EditorContent() {
         return Javascript;
       case "HTML":
         return HTML;
+      case "Typescript":
+        return Typescript;
       default:
         return "";
     }
   };
-
-  console.log("codingLanguage:", codingLanguage);
-  console.log("defaultValue:", getDefaultValue());
 
   return (
     <Editor
@@ -46,7 +46,7 @@ function EditorContent() {
       theme="vs-dark"
       defaultLanguage={codingLanguage.toLowerCase()}
       options={options}
-      defaultValue={getDefaultValue()}
+      value={getDefaultValue()}
     ></Editor>
   );
 }
