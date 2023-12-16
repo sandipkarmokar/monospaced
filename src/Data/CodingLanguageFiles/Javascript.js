@@ -1,17 +1,21 @@
 export const Javascript = `
-const greeter = (name) => {
-  console.log(name);
+const Person = {
+  firstName: string,
+  lastName: string,
+  age: number,
 };
 
-greeter("alex");
-const greeter = (name) => {
-  console.log(name);
-};
+function greetPerson(person) {
+  const { firstName, lastName, age } = person;
+  return \`Hello, \${firstName} \${lastName}! You are \${age} years old.\`;
+}
 
-greeter("alex");
-const greeter = (name) => {
-  console.log(name);
-};
+function isAdult(person) {
+  return person.age >= 18;
+}
 
-greeter("alex");
+const john = { firstName: "John", lastName: "Doe", age: 25 };
+
+console.log(greetPerson(john)); // Output: Hello, John Doe! You are 25 years old.
+console.log(isAdult(john));
 `;
