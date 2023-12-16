@@ -1,5 +1,5 @@
 // File: EditorContent.tsx
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Editor from "@monaco-editor/react";
 import { FontContext } from "./Base";
 import { CodingLanguageContext } from "./Editor";
@@ -10,7 +10,7 @@ import { Typescript } from "../Data/CodingLanguageFiles/Typescript";
 
 function EditorContent() {
   const { font, setFont } = useContext(FontContext);
-  const [selectedFont, setSelectedFont] = useState("");
+  const [selectedFont, setSelectedFont] = React.useState("");
   const { codingLanguage, setCodingLanguage } = useContext(
     CodingLanguageContext
   );
