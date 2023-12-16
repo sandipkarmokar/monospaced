@@ -6,7 +6,6 @@ export const FontContext = React.createContext();
 
 function Base() {
   const [font, setFont] = React.useState("Fira Code");
-  console.log(font);
   return (
     <FontContext.Provider value={{ font, setFont }}>
       <div className="w-screen bg-dark_blue-500 h-screen flex items-center">

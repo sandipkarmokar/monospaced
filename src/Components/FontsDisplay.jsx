@@ -8,7 +8,15 @@ function FontsDisplay() {
   return (
     <div className="m-6">
       {Fonts.map(({ name, id }) => {
-        return <FontSelectorButton setFont={setFont} name={name} key={id} />;
+        const isSelected = font === name;
+        return (
+          <FontSelectorButton
+            isSelected={isSelected}
+            setFont={setFont}
+            name={name}
+            key={id}
+          />
+        );
       })}
     </div>
   );
