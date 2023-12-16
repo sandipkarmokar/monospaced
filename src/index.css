@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=Fira+Code&family=Fira+Mono&family=IBM+Plex+Sans&family=JetBrains+Mono&family=Noto+Sans+Mono&family=Red+Hat+Mono&family=Roboto+Mono&family=Space+Mono&family=Ubuntu+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
