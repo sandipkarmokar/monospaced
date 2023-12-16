@@ -2,16 +2,19 @@ import React from "react";
 import { CodingLanguages } from "../Data/CodingLanguages";
 import CodingLanguageButton from "./CodingLanguageButton";
 
+import { CodingLanguageContext } from "./Editor";
+
 function EditorHeader() {
-  const [selectedButton, setSelectedButton] = React.useState("HTML");
-  console.log(selectedButton);
+  const { codingLanguage, setCodingLanguage } = React.useContext(
+    CodingLanguageContext
+  );
   return (
     <div className="bg-dark_blue-300 h-20 rounded-t-lg border-[#012A45] p-6">
       {CodingLanguages.map(({ name, id }) => {
-        const isSelected = selectedButton === name;
+        const isSelected = codingLanguage === name;
         return (
           <CodingLanguageButton
-            setSelectedButton={setSelectedButton}
+            setCodingLanguage={setCodingLanguage}
             name={name}
             key={id}
             isSelected={isSelected}
