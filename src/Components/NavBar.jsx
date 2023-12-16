@@ -1,3 +1,6 @@
+import React from "react";
+import GithubIcon from "../assets/githubIcon.svg";
+
 function NavBar() {
   return (
     <div className="w-screen bg-dark_blue-300 h-24 flex items-center">
@@ -10,8 +13,15 @@ function NavBar() {
           <a href="#" className="mr-11">
             Why MonoSpaced Fonts?
           </a>
-          <button className="bg-dark_blue-500 p-5 h-11 flex items-center border-[#022236] rounded">
-            Github
+          <button className="bg-dark_blue-500 p-5 h-11 flex items-center justify-between shadow-xl border-[#022236] rounded hover:bg-black">
+            <img className="h-6 mr-4" src={GithubIcon} alt="GitHub Icon" />
+            <a
+              href="https://github.com/sandipkarmokar/monospaced"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
           </button>
         </div>
       </div>

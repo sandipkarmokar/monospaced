@@ -1,4 +1,3 @@
-import React from "react";
 import FontsDisplay from "./FontsDisplay";
 
 function FontSelector() {

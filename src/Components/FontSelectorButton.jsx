@@ -1,5 +1,3 @@
-import React from "react";
-
 function FontSelectorButton({ isSelected, setFont, name, id }) {
   return (
     <>
