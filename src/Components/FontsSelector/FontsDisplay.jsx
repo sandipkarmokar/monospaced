@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Fonts } from "../Data/Fonts";
-import FontSelectorButton from "./FontSelectorButton";
-import { FontContext } from "./Base";
+import { Fonts } from "../../Data/Fonts";
+import FontSelectorButton from "../Buttons/FontSelectorButton";
+import { FontContext } from "../Base";
 
 function FontsDisplay() {
   const { font, setFont } = useContext(FontContext);

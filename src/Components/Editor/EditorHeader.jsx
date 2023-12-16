@@ -1,6 +1,6 @@
 import React from "react";
-import { CodingLanguages } from "../Data/CodingLanguages";
-import CodingLanguageButton from "./CodingLanguageButton";
+import { CodingLanguages } from "../../Data/CodingLanguages";
+import CodingLanguageButton from "../Buttons/CodingLanguageButton";
 
 import { CodingLanguageContext } from "./Editor";
 

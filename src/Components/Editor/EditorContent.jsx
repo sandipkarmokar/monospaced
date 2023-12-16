@@ -1,12 +1,12 @@
 // File: EditorContent.tsx
 import React, { useContext, useEffect } from "react";
 import Editor from "@monaco-editor/react";
-import { FontContext } from "./Base";
+import { FontContext } from "../Base";
 import { CodingLanguageContext } from "./Editor";
-import { Fonts } from "../Data/Fonts";
-import { Javascript } from "../Data/CodingLanguageFiles/Javascript";
-import { HTML } from "../Data/CodingLanguageFiles/HTML";
-import { Typescript } from "../Data/CodingLanguageFiles/Typescript";
+import { Fonts } from "../../Data/Fonts";
+import { Javascript } from "../../Data/CodingLanguageFiles/Javascript";
+import { HTML } from "../../Data/CodingLanguageFiles/HTML";
+import { Typescript } from "../../Data/CodingLanguageFiles/Typescript";
 
 function EditorContent() {
   const { font, setFont } = useContext(FontContext);

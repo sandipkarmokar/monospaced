@@ -1,6 +1,6 @@
 import React from "react";
-import Editor from "./Editor";
-import FontSelector from "./FontSelector";
+import Editor from "./Editor/Editor";
+import FontSelector from "./FontsSelector/FontSelector";
 
 export const FontContext = React.createContext();
 
