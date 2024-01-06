@@ -16,6 +16,6 @@ function isAdult(person) {
 
 const john = { firstName: "John", lastName: "Doe", age: 25 };
 
-console.log(greetPerson(john)); // Output: Hello, John Doe! You are 25 years old.
+console.log(greetPerson(john));
 console.log(isAdult(john));
 `;
