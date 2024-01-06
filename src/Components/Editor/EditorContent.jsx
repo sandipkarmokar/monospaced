@@ -41,13 +41,14 @@ function EditorContent() {
   };
 
   return (
-    <Editor
-      className="h-full"
-      theme="vs-dark"
-      defaultLanguage={codingLanguage.toLowerCase()}
-      options={options}
-      value={getDefaultValue()}
-    ></Editor>
+    <div className="h-full">
+      <Editor
+        theme="vs-dark"
+        defaultLanguage={codingLanguage.toLowerCase()}
+        options={options}
+        value={getDefaultValue()}
+      ></Editor>
+    </div>
   );
 }
 
